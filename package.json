@@ -1,0 +1,21 @@
+{
+  "name": "pastools-platform",
+  "version": "1.0.0",
+  "description": "PAStools - Industrial Control Systems Engineering Data Management Platform",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "backend:dev": "cd packages/backend && npm run start:dev",
+    "frontend:dev": "cd packages/frontend && npm run dev",
+    "backend:build": "cd packages/backend && npm run build",
+    "frontend:build": "cd packages/frontend && npm run build",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
